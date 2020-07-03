@@ -12,11 +12,11 @@
 **/
 
 const header = document.querySelector("header");
-const sectionOne = document.querySelector(".content");
+const sectionOne = document.querySelector(".home");
 const faders = document.querySelectorAll(".fade-in");
 
 const sectionOneOptions = {
-	rootMargin: "-70% 0% 0% 0%"
+	rootMargin: "-20% 0% 0% 0%"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(

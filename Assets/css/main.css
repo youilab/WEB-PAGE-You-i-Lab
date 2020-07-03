@@ -1,46 +1,47 @@
-* {
+* 
+{
     box-sizing: border-box;
 }
 
 html,
-body {
+body 
+{
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    font-family: 'Roboto';
 }
 
-span 
+body 
 {
-    font-size: 2rem;
-    color: white;
-    vertical-align: middle;
-    display: inline-block;
-    line-height: normal;
-    font-weight: bold;
+    margin: 0;
+    font-family: Quicksand, Avenir;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
 }
 
-h3 
-{
-    font-size: 3.5rem;
-    color: #f37f22;
-    padding: 30px;
-    width: 100%;
-}
 
 /***********************************
 ** Navbar styles
 ***********************************/
 
-a 
+nav
 {
-    color: #373634;
-    text-decoration: none;
+    background-color: #cd4a4a;
+    text-align: start;
 }
 
-a:hover 
+nav a
 {
-    border-bottom: 2px solid #f37f22;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav a:hover 
+{
+    border-bottom: 2px solid #fff;
 }
 
 li {
@@ -59,7 +60,7 @@ li {
 
 .nav-changed > .top-bar
 {
-    transition: background 250ms ease-in;
+    transition: background 550ms ease-in;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     background-color: black;
     z-index: 9999;
@@ -68,6 +69,11 @@ li {
 .nav-changed a
 {
     color: white;
+}
+
+.nav-changed a:hover 
+{
+    border-bottom: 2px solid #f37f22;
 }
 
 .top-bar>* {
@@ -86,7 +92,7 @@ li {
 
 .top-bar .right {
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .nav-links {
@@ -141,7 +147,7 @@ li {
     transition-duration: .15s;
     transition-property: transform;
     border-radius: 4px;
-    background-color: #f37f22;
+    background-color: #fff;
 }
 
 .hamburger-inner::after,
@@ -201,6 +207,257 @@ li {
 
 
 /***********************************
+** Intro styles
+***********************************/
+
+.contenedor {
+    width: 100%;
+    max-width: 93rem;
+}
+.contenedor .header {
+    background: #CD4A4A;
+}
+
+.home .bg-image {
+    position: absolute;
+    background: url("../img/main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  .home{
+    min-height: 350px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .home-text{
+    padding: 0 1.5rem;
+    max-height: 100%;
+    text-align: center;
+}
+
+.home-text h1 {
+    font-size: 2rem;
+    color: #2B0A60;   
+    font-family: Quicksand;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.home-text p {
+    font-size: 1rem;
+    color: #2B0A60;  
+}
+
+
+.contenedor .section-1 {
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0 1rem 0;
+}
+
+.section-1 .bg-image{
+    position: absolute;
+    margin-top: -00px;
+    width: 100%;
+    z-index: -1;
+}
+
+.section-1 .bg-image img{
+    width: 100%;
+    min-height: 250px;
+    max-height: 100%;
+}    
+
+.section-1-text{
+    margin-top: -0px;
+    padding: 0 1.5rem;
+    max-height: 100%;
+    text-align: center;
+}
+
+
+.section-1 h2{
+    font-size: 1.5rem;
+    color: #CD4A4A;
+    font-family: Quicksand;
+    padding-bottom: 0;
+}
+
+.section-1 p{
+    font-size: 1rem;
+    color: #CD4A4A;
+    padding: 1rem 5%;
+    font-family: AvenirLTStd-Book;
+}
+
+.contenedor .section-2 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    height: auto;
+}
+
+.section-2 .bg-image{
+    position: absolute;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+}
+.section-2 .bg-image-desk{
+    display: none;
+}
+
+.section-2 .bg-image img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.section-2 .section-2-text,
+.section-2 .section-2-text2{
+    display: block;
+    margin-top: -40px;
+    padding: 3rem 1.5rem 0 1.5rem;
+    max-height: 100%;
+    text-align: center;
+}
+.section-2 .section-2-text h2{
+    font-size: 1.5rem;
+    color: #2B0A60;  
+    font-family: Quicksand;
+    padding-top: 1rem;
+}
+.section-2 .section-2-text p{
+    font-size: 1rem;
+    color: #2B0A60;  
+    padding: 1rem 5%;
+    font-family: AvenirLTStd-Book;
+}
+.section-2 .items{
+    width: 100%;
+    text-align: center;
+}
+
+.section-2 .item1,
+.section-2 .item2,
+.section-2 .item3,
+.section-2 .item4{
+    float: left;
+     width: 50%;
+     margin: 0;
+     height: 189;
+     color: #CD4A4A;;
+  }
+
+  .section-2 .section-2-text2 p{
+    display: inline-block;
+    font-size: 1rem;
+    color: #2B0A60;  
+    padding: 1rem 5%;
+    font-family: AvenirLTStd-Book;
+    padding-top: 2rem;
+}
+
+
+.contenedor .section-3 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0 1rem 0;
+}
+
+.section-3 h2{
+    font-size: 1.5rem;
+    width: 100%;
+    color: #CD4A4A;
+    font-family: Quicksand;
+    padding-bottom: 0;
+}
+
+.section-3 p{
+    font-size: 1rem;
+    color: #CD4A4A;
+    padding: 1.5rem 5%;
+    font-family: AvenirLTStd-Book;
+}
+.section-3 .hashtag{
+    font-size: 1.3rem;
+}
+
+.btn {
+    background: #CD4A4A;
+    color: white;
+    padding:.6rem 2rem .6rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+
+
+
+footer{
+    width: 100%;
+    background:#E08C30 ;
+    color: white;
+    text-align: left;
+    
+}
+footer h4{
+    color: #2B0A60;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+footer p {
+    font-size: 14px;
+    color: white;
+    line-height: 30px;
+    
+}
+
+.title1-footer,
+.title2-footer,
+.title3-footer{
+    padding-top: 5%;
+    padding-left: 5%;
+    
+}
+
+.cont1-footer,
+.cont2-footer,
+.cont3-footer{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer a {
+    color: white; 
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 30px;
+}
+.social-footer{
+    text-align: center;
+    grid-area: social-footer;
+}
+.social-footer img{
+    width: 50px;
+     }
+
+/***********************************
 ** Media Queries
 ***********************************/
 
@@ -215,6 +472,7 @@ li {
     {
         position: fixed;
         background: #a2cce0;
+        /*background: #2b0a60;*/
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -222,6 +480,7 @@ li {
         -webkit-clip-path: (0.4% at 100% -10%);
         transition: all 2s ease-out;
         pointer-events: none;
+        text-align: center;
     }
 
     .nav-links.open
@@ -286,7 +545,8 @@ li {
         margin-right: 20px;
     }
 
-    .hamburger {
+    .hamburger 
+    {
         position: absolute;
         cursor: pointer;
         right: 5%;
@@ -297,4 +557,192 @@ li {
     }
 }
 
+@media (min-width: 560px) {  
+    .home-text h1
+    {
+        font-size: 3rem;
+    }
 
+    .home-text p 
+    {
+        font-size: 1.7rem;
+    }
+
+    .home img, .home .bg-image
+    {
+        height: 700px;
+    }
+
+    .home-text
+    {
+        padding: 8rem 5rem 2rem 3rem;
+        max-height: 100%;
+        min-height: 500px;
+        text-align: center;
+        margin-left: 40.6%;
+    }
+    
+    .section-1
+    {
+        min-height: 250px;
+        margin:0;
+    }
+
+    .contenedor .section-3,
+    .section-2 .section-2-text,
+    .section-2 .section-2-text2
+    {
+        margin: 0;
+    }
+    
+    .section-1 h2,
+    .section-2-text h2,
+    .contenedor .section-3  h2
+    {
+        font-size: 2rem;
+    }
+    
+    .section-1 p,
+    .section-2 .section-2-text2 p,
+    .section-2 .section-2-text p,
+    .contenedor .section-3 p
+    {
+        font-size: 1.5rem;
+    }
+
+    .section-2 .bg-image-desk
+    {
+        display: block;
+        position: absolute;
+        max-height: 657px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .section-2 .bg-image-desk img
+    {
+        width: 100%;
+        height: 100%;
+        min-height:657px ;
+    }
+
+    .section-2 .bg-image
+    {
+        visibility: hidden;
+    }
+    
+    
+    .section-2 .item1,
+    .section-2 .item2,
+    .section-2 .item3,
+    .section-2 .item4
+    {
+        float: left;
+        width: 25%;
+        margin: 0;
+        height: 189;
+        color: #CD4A4A;;
+    }
+
+    .contenedor .section-3 
+    {
+        padding: 10rem 0 1rem 0;
+    }
+
+    .contenedor .section-3 .hashtag
+    {
+        font-size: 1.8rem;
+    }
+
+
+    .contenedor .footer 
+    {
+        background:#E08C30 ;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "title1-footer title2-footer title3-footer"
+                              "cont1-footer    cont2-footer  cont3-footer"
+                              "social-footer social-footer social-footer"
+    }
+
+    footer h4
+    {
+        color: #2B0A60;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    footer p 
+    {
+        font-size: 14px;
+        color: white;
+        padding-right: 10px;
+        line-height: 30px;
+        
+    }
+
+    .title1-footer
+    {
+        grid-area: title1-footer;
+        padding-top: 20px;
+        padding-left: 75px;
+        
+    }
+
+    .title2-footer
+    {
+        grid-area: title2-footer;
+        padding-top: 20px;
+        padding-left: 75px;
+        
+    }
+
+    .title3-footer
+    {
+        grid-area: title3-footer;
+        padding-top: 20px;
+        padding-left: 75px;
+        
+    }
+
+    .cont1-footer
+    {
+        grid-area: cont1-footer;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .cont2-footer
+    {
+        grid-area: cont2-footer;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .cont3-footer
+    {
+        grid-area: cont3-footer;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    footer a 
+    {
+        color: white; 
+        text-decoration: none;
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    .social-footer
+    {
+        text-align: center;
+        grid-area: social-footer;
+    }
+
+    .social-footer img
+    {
+        width: 50px;
+    }
+}
