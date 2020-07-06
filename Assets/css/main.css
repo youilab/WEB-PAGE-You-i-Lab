@@ -213,6 +213,7 @@ li {
 .contenedor {
     width: 100%;
     max-width: 93rem;
+    margin-top: 50px;
 }
 .contenedor .header {
     background: #CD4A4A;
@@ -226,12 +227,13 @@ li {
     background-size: cover;
     width: 100%;
     min-height: 350px;
-    height: 100%;
+    max-height: 700px;
     z-index: -1;
     opacity: 0.8;
   }
 
   .home{
+    max-height: 700px;  
     min-height: 350px;
     color: #fff;
     text-align: center;
@@ -247,6 +249,7 @@ li {
     font-size: 2rem;
     color: #2B0A60;   
     font-family: Quicksand;
+    font-weight: bold;
     padding-top: 50px;
     padding-bottom: 0;
 }
@@ -260,23 +263,23 @@ li {
 .contenedor .section-1 {
     width: 100%;
     max-height: 300px;
-    display: flex;
+    min-height: 150px;
     align-items: center;
     justify-content: center;
-    padding: 0rem 0 1rem 0;
+    padding: 0rem 0 2rem 0;
 }
 
 .section-1 .bg-image{
     position: absolute;
-    margin-top: -00px;
     width: 100%;
+    margin-top: -50px;
+    max-height: 195px;
     z-index: -1;
 }
 
 .section-1 .bg-image img{
     width: 100%;
-    min-height: 250px;
-    max-height: 100%;
+    min-height: 100px;
 }    
 
 .section-1-text{
@@ -306,33 +309,44 @@ li {
     align-items: center;
     justify-content: center;
     min-height: auto;
-    height: auto;
+    max-height: 850px;
 }
 
 .section-2 .bg-image{
     position: absolute;
-    height: 750px;
+    height: 100%;
+    min-height: 650px;
+    max-height: 700px;
     width: 100%;
     z-index: -1;
+}
+.section-2 .bg-image img{
+    width: 100%;
+    height: 100%;
+    
 }
 .section-2 .bg-image-desk{
     display: none;
 }
 
-.section-2 .bg-image img{
-    width: 100%;
-    height: 100%;
-   
-}
-
-
-.section-2 .section-2-text,
-.section-2 .section-2-text2{
-    display: block;
+.section-2 .section-2-text{
+    display: inline-block;
     margin-top: -40px;
-    padding: 3rem 1.5rem 0 1.5rem;
+    padding: 5rem 1.5rem 0 1.5rem;
     max-height: 100%;
     text-align: center;
+}
+.section-2 .section-2-text2{
+    margin-top: -20px;
+    display: inline-block;
+    padding: 0 1.5rem 0 1.5rem;
+    max-height: 100%;
+    height: 168px;
+    text-align: center;
+}
+.section-2 .section-2-text2 p{
+    padding-top: 0;
+    margin-top: 0;
 }
 .section-2 .section-2-text h2{
     font-size: 1.5rem;
@@ -359,7 +373,14 @@ li {
      width: 50%;
      margin: 0;
      height: 189;
-     color: #CD4A4A;;
+     color: #CD4A4A;
+     padding: 0 1.5rem 0 1.5rem;
+  }
+  .section-2 .item1 img,
+.section-2 .item2 img,
+.section-2 .item3 img,
+.section-2 .item4 img{
+    width: 70%;
   }
 
   .section-2 .section-2-text2 p{
@@ -407,7 +428,323 @@ li {
 }
 
 
+/***********************************
+** About-us styles
+***********************************/
+.about .home .bg-image{
+    position: absolute;
+    background: url("../img/about.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 450px;
+    max-height: 500px;
+    z-index: -1;
+    opacity: 0.8;
+ }  
+ .about .section-1 .bg-image{
+     margin: 0;
+ }
 
+ .about .section-1{
+    display: block;
+    max-height: 700px;
+    height: fit-content;
+    min-height: 450px;
+}
+
+.about .section-1 .item1,
+.about .section-1 .item2{
+    padding: 10% 20% 0 20%;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .about .section-2{
+      padding: 48px 10% 0 10% ;
+  }
+  .about .section-2{
+    min-height: 1350px;
+    overflow: hidden;
+}
+
+.about .section-2 .item1 img{
+    width:100px;
+    border-radius:50%;
+    padding: 0 5%;
+}
+.about .section-2 .item1{
+    padding: 2rem 0;
+    color:#114D97;
+}
+.about .section-2 .left{
+    padding-right:5% ;
+}
+.about .section-2 .right{
+    padding-left:5% ;
+}
+
+.about .section-2 a {
+    background: #114D97;
+}
+.about .section-2 .btn{
+    padding: 0;
+}
+.about .section-2 h3{
+    padding: .5rem 0;
+}
+
+.about .section-2 h2{
+    color: #E08C30;
+    font-weight: bold;
+}
+
+.about .section-3 .thanks img,
+.about .section-3 .thanks ,
+.about .section-3 {
+   margin: 0;
+   padding:0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/***********************************
+** Profile styles
+***********************************/
+
+.profile .section-1{
+    margin-top: 50px;
+    display: block;
+    max-height: 800px;
+    min-height: 800px;
+    }
+    .profile .section-1 .item1 .picture{
+    width:70%;
+    border-radius:50%;
+    }
+    .profile .back{
+    text-align: start;
+    display: block;
+    color: #CD4A4A;
+    font-family: Quicksand;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+    }
+    .profile span{
+        color: #CD4A4A;
+        float: left;
+        margin-left: 5%;
+        }
+    .profile .section-1 h1{
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 200%;
+        color: #E08C30;
+        padding: 5% 11% 3% 11%;
+    }
+    .profile .section-1 h2,
+    .profile .section-1 p{
+        font-family: Quicksand;
+        color: #114D97;
+        padding: 5% 11% 3% 11%;
+    }
+    
+    .profile .section-1 .item1 .social img{
+    width: 50px;
+    }
+
+    .profile footer{
+       display: none;
+    }
+
+
+/***********************************
+** Projects styles
+***********************************/
+    
+.projects{
+    margin-top:50px ;
+}
+
+.projects input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background: #FFDFBD;
+    color: #CD4A4A;
+    border-radius: 35px 0px 0px 35px;  }
+
+  .projects .section-1 .search-container{
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px 0 30px 0;      
+  }
+  
+  .projects .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    background: #CD4A4A;
+    font-size: 17px;
+    color: #FFDFBD;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 35px 35px 0px;
+    margin-left: -5px;
+}
+    .projects h1{
+        color:  #CD4A4A;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    .projects .section-2{
+        min-height: 1500px;
+        width: 100%;
+    }
+    .projects .item1{
+        width: 80%;
+        border-color: hsla(0, 0%, 0%, 0.541);
+        box-shadow: 1px 1px 6px 1px rgba(215, 215, 215, .5);
+        margin: 0 10%;
+        padding: 0;
+        height: 425px;
+        margin-bottom: 50px;
+        
+    }
+    .projects .section-2 .item1 img{
+        width: 100%;
+        height: 200px;
+    }
+    .projects .section-2 .item1 p{
+        padding: 2% 5%;
+        padding-bottom: 20px;
+        color: #114D97;
+    }
+    .projects .section-2 .item1 h1{
+        color: #114D97;
+    }
+
+
+/***********************************
+** Project styles
+***********************************/
+    .project .section-1 {
+        min-height: 800px;
+        width: 100%;
+        padding: 0 5%;
+        margin-top: 50px;
+        display: inline-block;
+    }
+    .project .section-1 .item img{
+       width: 100%;
+    }
+    .project .section-1 .item h1{
+        color: #E08C30;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    .project .section-1 .item p{
+        color: #114D97;
+    }
+    .project .back{
+        text-align: start;
+        display: block;
+        color: #CD4A4A;
+        font-family: Quicksand;
+        font-weight: bold;
+        text-decoration: none;
+        float: right;
+        }
+    .project span{
+            color: #CD4A4A;
+            float: left;
+            margin-left: 5%;
+            margin-top: 50px;
+            }
+
+/***********************************
+** publications styles
+***********************************/
+     .publications .section-2{
+        overflow: auto;
+     }       
+     .publications .section-2 .item1 h1{
+         padding:20px 10px;
+        color: #114D97;
+        font-size: 100%;
+        font-weight: bold;
+    }
+    .publications .section-2 .item1 p{
+        color: #CD4A4A ;
+        padding:0 10px 20px 10px;
+    }
+    .publications .section-2 .item1{
+        height: 400px;
+    }
+    
+
+/***********************************
+** Contact styles
+***********************************/
+    .contact .section-1, .contact .contenedor .section-1 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        min-height: auto;
+        max-height: auto;
+    }
+    .contact .form {
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .contact input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background: #FFDFBD;
+    font-size: 17px;
+    color: #CD4A4A;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .contact h1{
+      font-size: 200%;
+      font-weight: bold;
+      color: #E08C30;
+  }
+  .contact label{
+      color: #CD4A4A
+  }
+  
+  
+  .contact textarea{
+      width: 100%;
+      height:200px;
+      background: #FFDFBD;
+     font-size: 17px;
+      color: #CD4A4A;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .contact input[type=submit]:hover {
+    background-color:#FFDFBD;
+    
+  }
+  .contact .section-1 .map{
+      padding:0 20px;
+  }
+
+/***********************************
+** footer styles
+***********************************/
 
 footer{
     width: 100%;
@@ -492,7 +829,7 @@ footer a {
 
     .nav-links > li
     {
-        opacity 0;
+        opacity: 0;
     }
 
     .nav-links li:nth-child(1)
@@ -558,6 +895,9 @@ footer a {
 }
 
 @media (min-width: 560px) {  
+    /***********************************
+** Media Queries Home
+***********************************/
     .home-text h1
     {
         font-size: 3rem;
@@ -582,17 +922,25 @@ footer a {
         margin-left: 40.6%;
     }
     
-    .section-1
+    .contenedor .section-1
     {
-        min-height: 250px;
+        min-height:300px;
         margin:0;
     }
+    .section-1 .bg-image
+    {
+        margin-top: 0;
+    }
+    .contenedor .section-1-text{
+        padding-top: 10%;
+    }
+    
 
     .contenedor .section-3,
     .section-2 .section-2-text,
     .section-2 .section-2-text2
     {
-        margin: 0;
+        margin-top:0;
     }
     
     .section-1 h2,
@@ -653,7 +1001,187 @@ footer a {
     {
         font-size: 1.8rem;
     }
+       /***********************************
+** Media Queries About-us
+***********************************/
 
+    .about  .home-text{
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .about .home img, 
+    .about .home .bg-image{
+        height: 700px;
+        max-height: 800px;
+    }
+
+    .about .section-1 .item1,
+    .about .section-1 .item2{
+    min-width: 50%;
+    width: 50%;
+    float: left;
+    padding-bottom: 20px;
+    padding: 10% 10% 0 10%;
+  }
+
+
+    .about .section-1 .item1 p,
+    .about .section-1 .item2 p{
+        padding: 0;
+    }
+
+    .about .section-2 {
+       min-height: 500px;
+    } 
+
+
+    .about .left, 
+    .about .right{
+        padding: 0;
+    }
+
+    .about .section-2 .item1 img{
+    width:150px;
+    }
+    .about .section-2 .team{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+
+    .about .section-2 .item1,
+    .about .section-2 .left,
+    .about .section-2 .right{
+      margin: 0;
+      padding: 0;
+     padding-bottom: 5%;
+     width: 100%;
+    }
+
+    .about .section-3{
+        margin: 0;
+        padding: 0; 
+        margin-bottom: -20px;
+    }
+
+       /***********************************
+** Profile styles Responsive
+***********************************/
+    
+    .profile .section-1{
+    max-height: 800px;
+    min-height: 800px;
+    margin: 0 3%;
+    }
+    .profile .section-1 .item1 .picture{
+    float: left;   
+    width:40%;
+    border-radius:50%;
+    padding: 0 5%;
+    }
+    .profile .section-1 .item1 .picture img{ 
+        width:50%;
+    } 
+    .profile .back{
+    text-align: start;
+    }
+    
+    .profile .section-1 .item1 .text{
+        padding: 0 5%;
+    }
+    .profile .section-1 .item1 .social img{
+    width: 50px;
+    }
+        /***********************************
+** Projects styles Responsive
+***********************************/
+    .projects .section-2{
+        width: 80%;
+        margin: 0 auto;
+        min-height: auto;
+    }
+    .projects .section-2 .item1{
+        width: 100%;
+        margin: 0 auto;
+        margin: 20px 0;
+        height: auto;
+    }
+    .projects .section-2 .item1 div{
+        width: 60%;
+        margin: 0 auto;
+        float: left;
+    }
+    .projects .section-2 .item1 img{
+        height: auto;
+    }
+    
+
+
+      /***********************************
+** Project styles Responsive
+***********************************/
+
+    .project .section-1 {
+        min-height: 700px;
+    }
+    .project .section-1 .item div{
+       width: 45%;
+       float: left;
+       padding-top: 50px;
+    }
+    .project .section-1 .item p{
+        color: #114D97;
+        width: 55%;
+        float: right;
+        padding-top: 50px;
+    }
+    .project .section-1 .item h1{
+        padding-top: 50px;
+    }
+    .project .back{
+        text-align: start;
+        display: block;
+        color: #CD4A4A;
+        font-family: Quicksand;
+        font-weight: bold;
+        text-decoration: none;
+        float: right;
+        }
+    .project span{
+            color: #CD4A4A;
+            float: left;
+            margin-left: 5%;
+            margin-top: 50px;
+            }
+ /***********************************
+** Media Queries publications
+***********************************/
+.publications .section-1{
+    min-height: auto;
+ }       
+  .publications .section-2{
+        overflow: visible;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        min-height: auto;
+     }        
+    .publications .section-2 .item1{
+        height: 400px;
+        width: 30%;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    
+       /***********************************
+** Media Queries footer
+***********************************/
 
     .contenedor .footer 
     {

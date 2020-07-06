@@ -10,9 +10,6 @@
           modifier: 1,
           slideShadows: true,
         },
-        pagination: {
-          el: '.swiper-pagination',
-        },
         loop: true,
         autoplay: {
           delay: 2500,

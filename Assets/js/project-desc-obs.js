@@ -1,9 +1,9 @@
 const header = document.querySelector("header");
-const sectionOne = document.querySelector(".description");
+const sectionOne = document.querySelector(".section-1");
 const faders = document.querySelectorAll(".fade-in");
 
 const sectionOneOptions = {
-	rootMargin: "10% 0% 0% 0%"
+	rootMargin: "-60% 0% 0% 0%"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
